@@ -13,6 +13,12 @@
       'defines': [
         'VERSION=0.4.6',
       ],
+      'xcode_settings': {
+        'OTHER_CFLAGS': [
+          "-std=c++11",
+          "-stdlib=libc++"
+        ],
+      },
       'sources': [
         'src/bindings.cpp',
         'src/ivrsystem.cpp',
